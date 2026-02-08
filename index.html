@@ -210,10 +210,11 @@
         }
 
         .hero h1 span {
-            background: linear-gradient(90deg, #e67e22, #f39c12);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        background: linear-gradient(90deg, #e67e22, #f39c12);
+        -webkit-background-clip: text; /* For Safari and older Chrome */
+        background-clip: text;         /* The standard property */
+        -webkit-text-fill-color: transparent;
+            }
 
         .hero p {
             font-size: 1.3rem;
